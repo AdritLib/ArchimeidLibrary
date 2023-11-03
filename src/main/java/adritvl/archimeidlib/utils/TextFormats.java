@@ -4,9 +4,10 @@ import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 
+import java.text.DecimalFormat;
+import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,7 +39,16 @@ public class TextFormats {
     public static void sendMsg(Player player, String message){
         player.sendMessage(color(message));
     }
-    public static void spawnHologram(String text, Location location, double duration){
 
+    /**Return a number formatted (100,000,000.000)*/
+    public static String formatNumber(double number){
+        DecimalFormat df = new DecimalFormat("###,###,###.##");
+        return df.format(number);
+    }
+
+    public static int randomNum(int min, int max){
+        Random r = new Random();
+        int value = (int) (min + (Math.random() * (max - min) + 1));
+        return r.nextInt(value);
     }
 }
