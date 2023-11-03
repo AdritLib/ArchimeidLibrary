@@ -1,0 +1,5 @@
+name: ArchimeidLib
+version: '1.0'
+main: adritvl.archimeidlib.ArchimeidLib
+api-version: '1.16'
+author: AdritVL

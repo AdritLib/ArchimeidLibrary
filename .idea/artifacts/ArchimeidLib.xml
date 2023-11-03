@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="ArchimeidLib">
+    <output-path>$PROJECT_DIR$/../../../Carpeta2021/Servidores/Only Life/plugins</output-path>
+    <root id="archive" name="ArchimeidLib.jar">
+      <element id="module-output" name="ArchimeidLib" />
+    </root>
+  </artifact>
+</component>
